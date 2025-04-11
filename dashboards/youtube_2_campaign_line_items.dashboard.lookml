@@ -1,6 +1,7 @@
 - dashboard: youtube_2_campaign_line_items
   title: YouTube Performance by Campaign Line Items
   extends: youtube_template
+  description: "Calendar of all campaigns and performance metrics by campaign line item."
 
 
 
@@ -9,22 +10,6 @@
     filters:
       youtube_dashboard_navigation_ext.parameter_navigation_focus_page: 2
 ###############################################################################################
-  # - name: header_campaign_calendar
-  #   type: text
-  #   body_text: "<div style=\"position: relative; text-align: center;
-  #               min-height: 40px; padding: 5px;\">
-  #               <span style=\"background-color: #FFFFFF; color: #808080;
-  #                           font-size: 120%; font-weight: bold;
-  #                           padding: 0px 30px 0 30px; height: 20px; margin-bottom: 2px;\">
-  #               What Campaign Line Items have run?
-  #               </span>
-  #               <div style=\"border-bottom: 2px #C0C0C0 inset;
-  #                   width: 100%; position: absolute; \">
-  #               </div>   </div>"
-  #   row: 2
-  #   col: 0
-  #   width: 24
-  #   height: 2
   - name: header_campaign_calendar
     type: text
     body_text: "<div style=\"position: relative; text-align: center;
@@ -50,22 +35,6 @@
     groupBars: true
     labelSize: 9pt
     showLegend: true
-    # color_application:
-    #   collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2
-    #   custom:
-    #     id: 165669c9-eda8-b629-9e8b-0ccab834cb96
-    #     label: Custom
-    #     type: continuous
-    #     stops:
-    #     - color: "#96d2e4"
-    #       offset: 0
-    #     - color: "#2da5c8"
-    #       offset: 50
-    #     - color: "#175364"
-    #       offset: 100
-    #   options:
-    #     steps: 5
-    #     reverse: true
     color_application:
       collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2
       palette_id: 5d189dfc-4f46-46f3-822b-bfb0b61777b1
@@ -94,34 +63,6 @@
           padding: 10,
         },
       }
-    # advanced_vis_config: |-
-    #   {
-    #     yAxis: {
-    #       type: 'datetime',
-    #       opposite: true,
-    #       title: {},
-    #       endOnTick: false,
-    #       startOnTick: false,
-    #       labels: {},
-    #       },
-    #     tooltip: {
-    #       animation: false,
-    #       backgroundColor: 'var(--vis-color-tooltip-background)',
-    #       borderRadius: 4,
-    #       borderWidth: 0,
-    #       followPointer: true,
-    #       hideDelay: 0,
-    #       outside: true,
-    #       padding: 8,
-    #       pointFormat: '<br/>Line Item: <br/>{point.name}<br/><br/> {point.formattedStart} — {point.formattedEnd}',
-    #       shadow: false,
-    #       style: {
-    #         color: 'white',
-    #         fontWeight: 400,
-    #         fontFamily: 'inherit',
-    #       },
-    #     },
-    #   }
     listen:
       advertiser: line_item_insights.advertiser
       campaign: line_item_insights.campaign
@@ -407,7 +348,6 @@
       line_item_insights.total_clicks_formatted: column
     series_colors:
       line_item_insights.total_clicks_formatted: "#D1E2F5"
-      # line_item_insights.cpc: "#1A73E8" #3388F0 #4DA0F7
       line_item_insights.cpc: "#4DA0F7"
       line_item_insights.ctr_formatted: "#E52592"
     series_point_styles:

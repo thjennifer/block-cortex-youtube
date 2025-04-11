@@ -1,6 +1,7 @@
 - dashboard: youtube_3_audience_type
   title: YouTube Perfomance by Audience Type
   extends: youtube_template
+  description: "Impressions and views by age group and gender and by audience segment."
   crossfilter_enabled: false
 
   elements:

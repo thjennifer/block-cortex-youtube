@@ -40,7 +40,7 @@
 #   cpv
 #   ctr
 #   trueview_vr
-#   total_spend_advertsier_currency
+#   total_spend_advertiser_currency
 #   total_spend_partner_currency
 #
 # NOTE
@@ -220,7 +220,7 @@ view: youtube_common_fields_ext {
     }
   }
 
-  measure: total_spend_advertsier_currency {
+  measure: total_spend_advertiser_currency {
     type: sum
     label: "Total Spend (Advertiser Currency)"
     description: "The amount of money spent to purchase impressions and deliver ads through Display & Video 360. Calculated based on the revenue model set for line items. This field is named Revenue in DV360. Reported in advertiser's currency. Should always include advertiser currency dimension with this measures in report."

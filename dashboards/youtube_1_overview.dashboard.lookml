@@ -1,6 +1,7 @@
 - dashboard: youtube_1_overview
   title: YouTube Performance Overview
   extends: youtube_template
+  description: "Overall performance including monthly impressions, CPM, CPV and cumulative spend."
 
   elements:
   - name: header_overall_performance
@@ -368,8 +369,6 @@
     series_types:
       line_item_insights.total_impressions_formatted: column
     series_colors:
-      # line_item_insights.total_impressions_formatted: "#E2F2D7" #D6E7C9
-      # line_item_insights.cpm: "#9334E6" #A042F3 #D35EFF #C750FF
       line_item_insights.total_impressions_formatted: "#D6E7C9"
       line_item_insights.cpm: "#D35EFF"
       line_item_insights.cpv: "#7CB342"
@@ -458,7 +457,6 @@
     series_types:
       line_item_insights.cumulative_total_spend_formatted: area
     series_colors:
-      # line_item_insights.cumulative_total_spend_formatted: "#2186b0" #3399cc #4db8e6
       line_item_insights.cumulative_total_spend_formatted: "#4db8e6"
     x_axis_datetime_label: "%b %y"
     reference_lines: [{reference_type: line, line_value: max, range_start: max, range_end: min,

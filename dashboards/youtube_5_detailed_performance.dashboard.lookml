@@ -1,6 +1,6 @@
 - dashboard: youtube_5_detailed_performance
   title:  YouTube Detailed Performance
-
+  description: "All performance metrics by campaign, insertion order and line item."
   extends: youtube_template
   crossfilter_enabled: false
 

@@ -1,5 +1,6 @@
 - dashboard: youtube_4_ad_format
   title: YouTube Performance by Ad Format
+  description: "Impressions and views by ad format."
   extends: youtube_template
 
   elements:
